@@ -2341,6 +2341,18 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <text x="0" y="1.905" size="1.27" layer="25" align="center">&gt;NAME</text>
 <smd name="1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
 </package>
+<package name="TEST_RING" urn="urn:adsk.eagle:footprint:13096597/3" library_version="11">
+<pad name="1" x="0" y="0" drill="1.02" diameter="1.6"/>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="1.17088125" width="0.1016" layer="48"/>
+<text x="0" y="2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="0.6096" layer="48" align="center">&gt;Name</text>
+</package>
+<package name="SHORT" urn="urn:adsk.eagle:footprint:17538737/2" library_version="14">
+<smd name="1" x="-1.397" y="0" dx="0.254" dy="0.254" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="1.397" y="0" dx="0.254" dy="0.254" layer="1" stop="no" thermals="no" cream="no"/>
+</package>
 <package name="SOLDER_BRIDGE" urn="urn:adsk.eagle:footprint:13096593/4" library_version="11">
 <wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
 <wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
@@ -2353,18 +2365,6 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <text x="0" y="1.905" size="1.27" layer="25" align="center">&gt;NAME</text>
-</package>
-<package name="TEST_RING" urn="urn:adsk.eagle:footprint:13096597/3" library_version="11">
-<pad name="1" x="0" y="0" drill="1.02" diameter="1.6"/>
-<circle x="0" y="0" radius="1.27" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="1.17088125" width="0.1016" layer="48"/>
-<text x="0" y="2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="0.6096" layer="48" align="center">&gt;Name</text>
-</package>
-<package name="SHORT" urn="urn:adsk.eagle:footprint:17538737/2" library_version="14">
-<smd name="1" x="-1.397" y="0" dx="0.254" dy="0.254" layer="1" stop="no" thermals="no" cream="no"/>
-<smd name="2" x="1.397" y="0" dx="0.254" dy="0.254" layer="1" stop="no" thermals="no" cream="no"/>
 </package>
 </packages>
 <packages3d>
@@ -2388,11 +2388,6 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <packageinstance name="TP1MM_MASK_SILKSCREEN"/>
 </packageinstances>
 </package3d>
-<package3d name="SOLDER_BRIDGE" urn="urn:adsk.eagle:package:13096608/4" type="model" library_version="11">
-<packageinstances>
-<packageinstance name="SOLDER_BRIDGE"/>
-</packageinstances>
-</package3d>
 <package3d name="5000" urn="urn:adsk.eagle:package:13096607/3" type="model" library_version="11">
 <packageinstances>
 <packageinstance name="TEST_RING"/>
@@ -2403,23 +2398,17 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <packageinstance name="SHORT"/>
 </packageinstances>
 </package3d>
+<package3d name="SOLDER_BRIDGE" urn="urn:adsk.eagle:package:13096608/4" type="model" library_version="11">
+<packageinstances>
+<packageinstance name="SOLDER_BRIDGE"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="TEST_PAD" urn="urn:adsk.eagle:symbol:13096598/1" library_version="11">
 <pin name="P$1" x="-2.54" y="0" visible="off" length="short"/>
 <text x="2.54" y="0" size="1.27" layer="95">&gt;NAME</text>
 <circle x="0.762" y="0" radius="0.71841875" width="0.254" layer="94"/>
-</symbol>
-<symbol name="SOLDER_BRIDGE" urn="urn:adsk.eagle:symbol:13096592/1" library_version="11">
-<pin name="1" x="-4.572" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
-<pin name="2" x="4.572" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<wire x1="-0.508" y1="-1.524" x2="-0.508" y2="1.524" width="0.2032" layer="94"/>
-<wire x1="-0.508" y1="1.524" x2="-2.032" y2="0" width="0.2032" layer="94" curve="90"/>
-<wire x1="-2.032" y1="0" x2="-0.508" y2="-1.524" width="0.2032" layer="94" curve="90"/>
-<wire x1="0.508" y1="1.524" x2="0.508" y2="-1.524" width="0.2032" layer="94"/>
-<wire x1="0.508" y1="-1.524" x2="2.032" y2="0" width="0.2032" layer="94" curve="90"/>
-<wire x1="2.032" y1="0" x2="0.508" y2="1.524" width="0.2032" layer="94" curve="90"/>
-<text x="-3.81" y="2.54" size="1.778" layer="95" align="center-left">&gt;NAME</text>
 </symbol>
 <symbol name="TEST_RING" urn="urn:adsk.eagle:symbol:16170568/1" library_version="11">
 <pin name="P$1" x="-2.54" y="0" visible="off" length="short"/>
@@ -2437,6 +2426,17 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <wire x1="1.524" y1="0" x2="0" y2="1.524" width="0.2032" layer="94" curve="90"/>
 <wire x1="-2.54" y1="0" x2="-1.524" y2="0" width="0.15" layer="94"/>
 <wire x1="2.54" y1="0" x2="1.524" y2="0" width="0.15" layer="94"/>
+</symbol>
+<symbol name="SOLDER_BRIDGE" urn="urn:adsk.eagle:symbol:13096592/1" library_version="11">
+<pin name="1" x="-4.572" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="4.572" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="-0.508" y1="-1.524" x2="-0.508" y2="1.524" width="0.2032" layer="94"/>
+<wire x1="-0.508" y1="1.524" x2="-2.032" y2="0" width="0.2032" layer="94" curve="90"/>
+<wire x1="-2.032" y1="0" x2="-0.508" y2="-1.524" width="0.2032" layer="94" curve="90"/>
+<wire x1="0.508" y1="1.524" x2="0.508" y2="-1.524" width="0.2032" layer="94"/>
+<wire x1="0.508" y1="-1.524" x2="2.032" y2="0" width="0.2032" layer="94" curve="90"/>
+<wire x1="2.032" y1="0" x2="0.508" y2="1.524" width="0.2032" layer="94" curve="90"/>
+<text x="-3.81" y="2.54" size="1.778" layer="95" align="center-left">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2496,25 +2496,6 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SOLDER_BRIDGE" urn="urn:adsk.eagle:component:13096613/4" prefix="SB" library_version="11">
-<gates>
-<gate name="G$1" symbol="SOLDER_BRIDGE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOLDER_BRIDGE">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:13096608/4"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TEST_RING" urn="urn:adsk.eagle:component:13096612/3" prefix="TP" library_version="11">
 <description>&lt;p&gt;Test rings are used to fixing multimeter probe and doing measurements hands-free&lt;/P&gt;
 
@@ -2555,6 +2536,25 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="SOLDER_BRIDGE" urn="urn:adsk.eagle:component:13096613/4" prefix="SB" library_version="11">
+<gates>
+<gate name="G$1" symbol="SOLDER_BRIDGE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOLDER_BRIDGE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:13096608/4"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="con-jst-ph" urn="urn:adsk.eagle:library:13143856">
@@ -2581,22 +2581,24 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <text x="0" y="-2.54" size="1.016" layer="27" ratio="10" align="center">&gt;VALUE</text>
 <text x="0" y="0" size="0.8128" layer="48" align="center">&gt;Name</text>
 </package>
-<package name="S4B-PH-K" urn="urn:adsk.eagle:footprint:13143901/4" library_version="5">
-<pad name="1" x="-3" y="0" drill="0.8128" shape="square" rot="R90"/>
-<pad name="2" x="-1" y="0" drill="0.8128" shape="octagon" rot="R90"/>
-<pad name="3" x="1" y="0" drill="0.8128" shape="octagon" rot="R90"/>
-<pad name="4" x="3" y="0" drill="0.8128" shape="octagon" rot="R90"/>
-<wire x1="-4.95" y1="1.6" x2="4.95" y2="1.6" width="0.0508" layer="51"/>
-<wire x1="4.95" y1="1.6" x2="4.95" y2="-6" width="0.0508" layer="51"/>
-<wire x1="-4.95" y1="-6" x2="-4.95" y2="1.6" width="0.0508" layer="51"/>
-<wire x1="-5.15" y1="1.8" x2="5.15" y2="1.8" width="0.127" layer="21"/>
-<wire x1="5.15" y1="1.8" x2="5.15" y2="-3" width="0.127" layer="21"/>
-<wire x1="-5.15" y1="-3" x2="-5.15" y2="1.8" width="0.127" layer="21"/>
-<wire x1="-4.95" y1="-6" x2="4.95" y2="-6" width="0.0508" layer="51"/>
-<wire x1="-4.953" y1="1.524" x2="-4.953" y2="-5.969" width="0.1016" layer="48"/>
-<wire x1="-4.953" y1="-5.969" x2="4.953" y2="-5.969" width="0.1016" layer="48"/>
-<wire x1="4.953" y1="-5.969" x2="4.953" y2="1.524" width="0.1016" layer="48"/>
-<wire x1="4.953" y1="1.524" x2="-4.953" y2="1.524" width="0.1016" layer="48"/>
+<package name="S6B-PH-K" urn="urn:adsk.eagle:footprint:13143889/4" library_version="5">
+<pad name="1" x="-5" y="0" drill="0.8128" shape="square" rot="R90"/>
+<pad name="2" x="-3" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<pad name="3" x="-1" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<pad name="4" x="1" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<pad name="5" x="3" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<pad name="6" x="5" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<wire x1="-6.95" y1="1.6" x2="6.95" y2="1.6" width="0.0508" layer="51"/>
+<wire x1="6.95" y1="1.6" x2="6.95" y2="-6" width="0.0508" layer="51"/>
+<wire x1="-6.95" y1="-6" x2="-6.95" y2="1.6" width="0.0508" layer="51"/>
+<wire x1="-7.15" y1="1.8" x2="7.15" y2="1.8" width="0.127" layer="21"/>
+<wire x1="7.15" y1="1.8" x2="7.15" y2="-3" width="0.127" layer="21"/>
+<wire x1="-7.15" y1="-3" x2="-7.15" y2="1.8" width="0.127" layer="21"/>
+<wire x1="-6.95" y1="-6" x2="6.95" y2="-6" width="0.0508" layer="51"/>
+<wire x1="-6.985" y1="1.524" x2="-6.985" y2="-5.969" width="0.1016" layer="48"/>
+<wire x1="-6.985" y1="-5.969" x2="6.985" y2="-5.969" width="0.1016" layer="48"/>
+<wire x1="6.985" y1="-5.969" x2="6.985" y2="1.524" width="0.1016" layer="48"/>
+<wire x1="6.985" y1="1.524" x2="-6.985" y2="1.524" width="0.1016" layer="48"/>
 <text x="0" y="2.54" size="1.016" layer="25" ratio="18" align="center">&gt;NAME</text>
 <text x="0" y="-2.54" size="1.016" layer="27" ratio="10" align="center">&gt;VALUE</text>
 <text x="0" y="0" size="0.8128" layer="48" align="center">&gt;Name</text>
@@ -2608,9 +2610,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <packageinstance name="S2B-PH-K"/>
 </packageinstances>
 </package3d>
-<package3d name="S4B-PH-K" urn="urn:adsk.eagle:package:13143913/4" type="model" library_version="5">
+<package3d name="S6B-PH-K" urn="urn:adsk.eagle:package:13143943/4" type="model" library_version="5">
 <packageinstances>
-<packageinstance name="S4B-PH-K"/>
+<packageinstance name="S6B-PH-K"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2627,21 +2629,25 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <text x="-1.27" y="3.175" size="1.778" layer="95">&gt;NAME</text>
 <text x="-1.27" y="-7.62" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
-<symbol name="ME04-1" urn="urn:adsk.eagle:symbol:13143867/1" library_version="5">
-<pin name="1" x="-5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="2" x="-5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="3" x="-5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="4" x="-5.08" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<symbol name="ME06-1" urn="urn:adsk.eagle:symbol:13143878/1" library_version="5">
+<pin name="1" x="-5.08" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<pin name="2" x="-5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<pin name="3" x="-5.08" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<pin name="4" x="-5.08" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<pin name="5" x="-5.08" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<pin name="6" x="-5.08" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1"/>
+<wire x1="1.27" y1="7.62" x2="0" y2="7.62" width="0.6096" layer="94"/>
 <wire x1="1.27" y1="5.08" x2="0" y2="5.08" width="0.6096" layer="94"/>
 <wire x1="1.27" y1="2.54" x2="0" y2="2.54" width="0.6096" layer="94"/>
 <wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
 <wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.6096" layer="94"/>
-<wire x1="-1.27" y1="7.62" x2="3.81" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="7.62" x2="-1.27" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="3.81" y1="7.62" x2="3.81" y2="-5.08" width="0.4064" layer="94"/>
-<wire x1="-1.27" y1="-5.08" x2="3.81" y2="-5.08" width="0.4064" layer="94"/>
-<text x="-1.27" y="8.255" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.27" y="-7.62" size="1.778" layer="95">&gt;VALUE</text>
+<wire x1="1.27" y1="-5.08" x2="0" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="10.16" x2="3.81" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="10.16" x2="-1.27" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="10.16" x2="3.81" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="-7.62" x2="3.81" y2="-7.62" width="0.4064" layer="94"/>
+<text x="-1.27" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.27" y="-10.16" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2669,25 +2675,27 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="S4B-PH-K" urn="urn:adsk.eagle:component:13143956/5" prefix="J" library_version="5">
+<deviceset name="S6B-PH-K" urn="urn:adsk.eagle:component:13143983/4" prefix="J" library_version="5">
 <description>Wire to board connector
 
-&lt;p&gt;Model suitable for S4B-PH-K&lt;/p&gt;
+&lt;p&gt;Model suitable for S6B-PH-K&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;Updated: 21.10.19 by Andrey Dovnar, andrevdovnar@gmail.com&lt;/p&gt;</description>
 <gates>
-<gate name="B" symbol="ME04-1" x="0" y="-5.08"/>
+<gate name="B" symbol="ME06-1" x="0" y="-7.62"/>
 </gates>
 <devices>
-<device name="" package="S4B-PH-K">
+<device name="" package="S6B-PH-K">
 <connects>
 <connect gate="B" pin="1" pad="1"/>
 <connect gate="B" pin="2" pad="2"/>
 <connect gate="B" pin="3" pad="3"/>
 <connect gate="B" pin="4" pad="4"/>
+<connect gate="B" pin="5" pad="5"/>
+<connect gate="B" pin="6" pad="6"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:13143913/4"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:13143943/4"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -2857,7 +2865,6 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <part name="C18" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="100nF"/>
 <part name="C19" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="100nF"/>
 <part name="GND8" library="Hople_supply" library_urn="urn:adsk.eagle:library:16851455" deviceset="GND" device=""/>
-<part name="SB1" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="SOLDER_BRIDGE" device="" package3d_urn="urn:adsk.eagle:package:13096608/4"/>
 <part name="GND9" library="Hople_supply" library_urn="urn:adsk.eagle:library:16851455" deviceset="GND" device=""/>
 <part name="GND10" library="Hople_supply" library_urn="urn:adsk.eagle:library:16851455" deviceset="GND" device=""/>
 <part name="GND11" library="Hople_supply" library_urn="urn:adsk.eagle:library:16851455" deviceset="GND" device=""/>
@@ -2878,13 +2885,12 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <part name="D1" library="Semiconductor_devices" library_urn="urn:adsk.eagle:library:13440980" deviceset="SOD523-SCHOTTKY" device="" package3d_urn="urn:adsk.eagle:package:17353230/2"/>
 <part name="J3" library="Terminal blocks" library_urn="urn:adsk.eagle:library:16833725" deviceset="DG301-2P" device="&quot;" package3d_urn="urn:adsk.eagle:package:16838205/2"/>
 <part name="SUPPLY5" library="Hople_supply" library_urn="urn:adsk.eagle:library:16851455" deviceset="AGND" device=""/>
-<part name="PAD5" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="WIRE_TO_BOARD_2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:16053046/2"/>
-<part name="PAD6" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="WIRE_TO_BOARD_2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:16053046/2"/>
+<part name="POWER" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="WIRE_TO_BOARD_2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:16053046/2"/>
+<part name="GROUND" library="commonly used connectors" library_urn="urn:adsk.eagle:library:12979860" deviceset="WIRE_TO_BOARD_2,54/1,1" device="" package3d_urn="urn:adsk.eagle:package:16053046/2"/>
 <part name="C20" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="100nF"/>
 <part name="C21" library="Capacitors" library_urn="urn:adsk.eagle:library:13360199" deviceset="C-EU-CERAMIC" device="0603" package3d_urn="urn:adsk.eagle:package:14720896/4" value="22pF"/>
 <part name="GND7" library="Hople_supply" library_urn="urn:adsk.eagle:library:16851455" deviceset="GND" device=""/>
 <part name="GND14" library="Hople_supply" library_urn="urn:adsk.eagle:library:16851455" deviceset="GND" device=""/>
-<part name="J5" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S4B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143913/4"/>
 <part name="J4" library="Terminal blocks" library_urn="urn:adsk.eagle:library:16833725" deviceset="DG301-2P" device="&quot;" package3d_urn="urn:adsk.eagle:package:16838205/2"/>
 <part name="OUT" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3"/>
 <part name="SYS" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3"/>
@@ -2892,6 +2898,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <part name="GND'" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="TEST_RING" device="" package3d_urn="urn:adsk.eagle:package:13096607/3"/>
 <part name="SB2" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="SHORT" device="" package3d_urn="urn:adsk.eagle:package:17538740/3"/>
 <part name="GND15" library="Hople_supply" library_urn="urn:adsk.eagle:library:16851455" deviceset="GND" device=""/>
+<part name="J5" library="con-jst-ph" library_urn="urn:adsk.eagle:library:13143856" deviceset="S6B-PH-K" device="" package3d_urn="urn:adsk.eagle:package:13143943/4"/>
+<part name="GND16" library="Hople_supply" library_urn="urn:adsk.eagle:library:16851455" deviceset="GND" device=""/>
+<part name="CEN_VREF" library="testing" library_urn="urn:adsk.eagle:library:13096589" deviceset="SOLDER_BRIDGE" device="" package3d_urn="urn:adsk.eagle:package:13096608/4"/>
 </parts>
 <sheets>
 <sheet>
@@ -3183,9 +3192,6 @@ for 10k Njiang Chinese ntc thermistor in stock</text>
 <instance part="GND8" gate="1" x="83.82" y="99.06" smashed="yes">
 <attribute name="VALUE" x="83.82" y="97.79" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="SB1" gate="G$1" x="81.28" y="58.42" smashed="yes">
-<attribute name="NAME" x="77.47" y="60.96" size="1.778" layer="95" align="center-left"/>
-</instance>
 <instance part="GND9" gate="1" x="121.92" y="7.62" smashed="yes">
 <attribute name="VALUE" x="121.92" y="6.35" size="1.778" layer="96" align="center"/>
 </instance>
@@ -3247,11 +3253,11 @@ for 10k Njiang Chinese ntc thermistor in stock</text>
 <instance part="SUPPLY5" gate="G$1" x="259.08" y="147.32" smashed="yes">
 <attribute name="VALUE" x="256.413" y="144.145" size="1.778" layer="96"/>
 </instance>
-<instance part="PAD5" gate="1" x="30.48" y="167.64" smashed="yes" rot="R270">
+<instance part="POWER" gate="1" x="30.48" y="167.64" smashed="yes" rot="R270">
 <attribute name="NAME" x="31.877" y="166.9542" size="1.778" layer="95"/>
 <attribute name="VALUE" x="27.178" y="168.783" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="PAD6" gate="1" x="30.48" y="162.56" smashed="yes" rot="R270">
+<instance part="GROUND" gate="1" x="30.48" y="162.56" smashed="yes" rot="R270">
 <attribute name="NAME" x="31.877" y="161.8742" size="1.778" layer="95"/>
 <attribute name="VALUE" x="27.178" y="163.703" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -3268,10 +3274,6 @@ for 10k Njiang Chinese ntc thermistor in stock</text>
 </instance>
 <instance part="GND14" gate="1" x="99.06" y="88.9" smashed="yes">
 <attribute name="VALUE" x="99.06" y="87.63" size="1.778" layer="96" align="center"/>
-</instance>
-<instance part="J5" gate="B" x="20.32" y="68.58" smashed="yes" rot="R180">
-<attribute name="NAME" x="21.59" y="60.325" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="21.59" y="76.2" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="J4" gate="G$1" x="266.7" y="165.1" smashed="yes" rot="MR0">
 <attribute name="NAME" x="267.97" y="168.91" size="1.778" layer="95" rot="MR0"/>
@@ -3292,6 +3294,16 @@ for 10k Njiang Chinese ntc thermistor in stock</text>
 <instance part="GND15" gate="1" x="170.18" y="104.14" smashed="yes">
 <attribute name="VALUE" x="170.18" y="102.87" size="1.778" layer="96" align="center"/>
 </instance>
+<instance part="J5" gate="B" x="20.32" y="63.5" smashed="yes" rot="R180">
+<attribute name="NAME" x="21.59" y="52.705" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="21.59" y="73.66" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="GND16" gate="1" x="27.94" y="50.8" smashed="yes">
+<attribute name="VALUE" x="27.94" y="49.53" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="CEN_VREF" gate="G$1" x="30.48" y="68.58" smashed="yes" rot="R180">
+<attribute name="NAME" x="36.83" y="73.66" size="1.778" layer="95" rot="R180" align="center-left"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3311,7 +3323,7 @@ for 10k Njiang Chinese ntc thermistor in stock</text>
 <wire x1="45.72" y1="149.86" x2="45.72" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="152.4" x2="38.1" y2="152.4" width="0.1524" layer="91"/>
 <junction x="38.1" y="152.4"/>
-<pinref part="PAD5" gate="1" pin="P"/>
+<pinref part="POWER" gate="1" pin="P"/>
 <junction x="30.48" y="165.1"/>
 </segment>
 <segment>
@@ -3351,7 +3363,7 @@ for 10k Njiang Chinese ntc thermistor in stock</text>
 <wire x1="25.4" y1="160.02" x2="30.48" y2="160.02" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="160.02" x2="30.48" y2="157.48" width="0.1524" layer="91"/>
 <junction x="30.48" y="157.48"/>
-<pinref part="PAD6" gate="1" pin="P"/>
+<pinref part="GROUND" gate="1" pin="P"/>
 <junction x="30.48" y="160.02"/>
 </segment>
 <segment>
@@ -3678,6 +3690,12 @@ for 10k Njiang Chinese ntc thermistor in stock</text>
 <wire x1="170.18" y1="109.22" x2="170.18" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="27.94" y1="53.34" x2="27.94" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="J5" gate="B" pin="1"/>
+<wire x1="27.94" y1="55.88" x2="25.4" y2="55.88" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="BTST1" class="0">
 <segment>
@@ -3910,7 +3928,6 @@ for 10k Njiang Chinese ntc thermistor in stock</text>
 </segment>
 <segment>
 <pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="85.852" y1="58.42" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="58.42" x2="121.92" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="58.42" x2="129.54" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="58.42" x2="129.54" y2="53.34" width="0.1524" layer="91"/>
@@ -3919,9 +3936,13 @@ for 10k Njiang Chinese ntc thermistor in stock</text>
 <junction x="121.92" y="58.42"/>
 <pinref part="R19" gate="G$1" pin="2"/>
 <wire x1="114.3" y1="53.34" x2="114.3" y2="58.42" width="0.1524" layer="91"/>
-<junction x="114.3" y="58.42"/>
 <label x="129.54" y="58.42" size="1.778" layer="95"/>
-<pinref part="SB1" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="J5" gate="B" pin="6"/>
+<label x="35.56" y="68.58" size="1.778" layer="95"/>
+<pinref part="CEN_VREF" gate="G$1" pin="2"/>
+<wire x1="25.908" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -3968,11 +3989,12 @@ for 10k Njiang Chinese ntc thermistor in stock</text>
 <label x="111.76" y="127" size="1.778" layer="95" rot="MR0"/>
 </segment>
 <segment>
-<label x="43.18" y="58.42" size="1.778" layer="95" rot="MR0"/>
-<pinref part="SB1" gate="G$1" pin="1"/>
-<wire x1="76.708" y1="58.42" x2="25.4" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="58.42" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="J5" gate="B" pin="1"/>
+<pinref part="J5" gate="B" pin="5"/>
+<label x="35.56" y="66.04" size="1.778" layer="95"/>
+<pinref part="CEN_VREF" gate="G$1" pin="1"/>
+<wire x1="35.052" y1="68.58" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="68.58" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="66.04" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="STAT1" class="0">
@@ -3981,11 +4003,11 @@ for 10k Njiang Chinese ntc thermistor in stock</text>
 <wire x1="114.3" y1="124.46" x2="45.72" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="124.46" x2="45.72" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="109.22" x2="40.64" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="109.22" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="109.22" x2="45.72" y2="63.5" width="0.1524" layer="91"/>
 <junction x="45.72" y="109.22"/>
-<label x="43.18" y="71.12" size="1.778" layer="95" rot="MR0"/>
+<label x="35.56" y="63.5" size="1.778" layer="95"/>
 <pinref part="D2" gate="G$1" pin="C"/>
-<wire x1="45.72" y1="71.12" x2="25.4" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="63.5" x2="25.4" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="J5" gate="B" pin="4"/>
 </segment>
 </net>
@@ -3995,11 +4017,11 @@ for 10k Njiang Chinese ntc thermistor in stock</text>
 <wire x1="114.3" y1="121.92" x2="50.8" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="121.92" x2="50.8" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="96.52" x2="40.64" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="96.52" x2="50.8" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="96.52" x2="50.8" y2="60.96" width="0.1524" layer="91"/>
 <junction x="50.8" y="96.52"/>
-<label x="43.18" y="68.58" size="1.778" layer="95" rot="MR0"/>
+<label x="35.56" y="60.96" size="1.778" layer="95"/>
 <pinref part="D3" gate="G$1" pin="C"/>
-<wire x1="50.8" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="60.96" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="J5" gate="B" pin="3"/>
 </segment>
 </net>
@@ -4009,11 +4031,11 @@ for 10k Njiang Chinese ntc thermistor in stock</text>
 <wire x1="114.3" y1="119.38" x2="55.88" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="119.38" x2="55.88" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="83.82" x2="40.64" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="83.82" x2="55.88" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="83.82" x2="55.88" y2="58.42" width="0.1524" layer="91"/>
 <junction x="55.88" y="83.82"/>
-<label x="43.18" y="66.04" size="1.778" layer="95" rot="MR0"/>
+<label x="35.56" y="58.42" size="1.778" layer="95"/>
 <pinref part="D4" gate="G$1" pin="C"/>
-<wire x1="55.88" y1="66.04" x2="25.4" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="58.42" x2="25.4" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="J5" gate="B" pin="2"/>
 </segment>
 </net>

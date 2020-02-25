@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2020-02-25T13:58:29Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 0.18,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "bq24616_battery_charger"
+        },
+        "Owner": "  <denis.jaskevich@yandex.by>",
+        "Size": {
+            "X": 60.011325,
+            "Y": 40.013228
+        }
+    }
+}
