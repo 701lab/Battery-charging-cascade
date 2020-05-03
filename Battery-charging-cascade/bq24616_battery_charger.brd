@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -23,20 +23,20 @@
 <layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
 <layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
 <layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -46,20 +46,20 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -186,7 +186,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.YnVzaW5lc3M6Z21haWwxNzIwNjY" projecturn="a.YnVzaW5lc3M6Z21haWwxNzIwNjYjRDIwMTkwOTMwMjIwNzA3MjUx" f3durn="urn:adsk.wipprod:dm.lineage:z69uqgnxSZWZ9WQEWaGqRw" pcbguid="78108e4b-1d66-452f-983a-0395d4198de6" lastpulledtime="" lastsyncedchangeguid="3ffa7171-015a-c5e4-203a-a4ed46401bc2"/>
+<fusionsync huburn="a.YnVzaW5lc3M6Z21haWwxNzIwNjY" projecturn="a.YnVzaW5lc3M6Z21haWwxNzIwNjYjMjAxOTExMDQyMzQ0NzQwNzY" f3durn="urn:adsk.wipprod:dm.lineage:9evl8moGRYqw3XsO_ZFx_A" pcbguid="9c96ea58-a580-451b-955d-b7e3030b35fc" lastpulledtime="" lastsyncedchangeguid="803d5644-5dd0-0128-db64-037b74e6d89f"/>
 <plain>
 <wire x1="0" y1="37.5" x2="0" y2="2.5" width="0" layer="20"/>
 <wire x1="0" y1="2.5" x2="2.5" y2="0" width="0" layer="20" curve="90"/>
@@ -7549,16 +7549,16 @@ design rules under a new name.</description>
 <element name="Q4" library="Transistors" library_urn="urn:adsk.eagle:library:17314025" package="SON5X6" package3d_urn="urn:adsk.eagle:package:17314028/4" value="" x="30" y="26.548" smashed="yes" rot="R180">
 <attribute name="BUILT_BY" value="EMA_UL_Team" x="-4.29" y="46.868" size="0.8128" layer="27" rot="R180" align="center" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="CSD18534Q5A" x="-4.29" y="46.868" size="0.8128" layer="27" rot="R180" align="center" display="off"/>
-<attribute name="NAME" x="30.0028" y="29.9844" size="0.8128" layer="25" ratio="6" rot="SR0" align="center"/>
 <attribute name="NAME" x="30" y="26.548" size="0.8128" layer="48" ratio="6" rot="R180" align="center"/>
+<attribute name="NAME" x="30.0028" y="29.9844" size="0.8128" layer="25" ratio="6" rot="SR0" align="center"/>
 <attribute name="VALUE" x="30" y="30.358" size="0.8128" layer="21" ratio="6" rot="SR180" align="center"/>
 <attribute name="VENDOR" value="Texas Instruments" x="-4.29" y="46.868" size="0.8128" layer="27" rot="R180" align="center" display="off"/>
 </element>
 <element name="Q5" library="Transistors" library_urn="urn:adsk.eagle:library:17314025" package="SON5X6" package3d_urn="urn:adsk.eagle:package:17314028/4" value="" x="29.984" y="33.54" smashed="yes">
 <attribute name="BUILT_BY" value="EMA_UL_Team" x="71.894" y="13.22" size="0.8128" layer="27" align="center" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="CSD18534Q5A" x="71.894" y="13.22" size="0.8128" layer="27" align="center" display="off"/>
-<attribute name="NAME" x="29.984" y="36.842" size="0.8128" layer="25" ratio="6" rot="SR0" align="center"/>
 <attribute name="NAME" x="29.984" y="33.54" size="0.8128" layer="48" ratio="6" align="center"/>
+<attribute name="NAME" x="29.984" y="36.842" size="0.8128" layer="25" ratio="6" rot="SR0" align="center"/>
 <attribute name="VALUE" x="29.984" y="29.73" size="0.8128" layer="21" ratio="6" rot="SR0" align="center"/>
 <attribute name="VENDOR" value="Texas Instruments" x="71.894" y="13.22" size="0.8128" layer="27" align="center" display="off"/>
 </element>

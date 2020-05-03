@@ -3940,7 +3940,7 @@ for 10k Njiang Chinese ntc thermistor in stock</text>
 </segment>
 <segment>
 <pinref part="J5" gate="B" pin="6"/>
-<label x="35.56" y="68.58" size="1.778" layer="95"/>
+<label x="25.4" y="68.58" size="1.778" layer="95"/>
 <pinref part="CEN_VREF" gate="G$1" pin="2"/>
 <wire x1="25.908" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
 </segment>
